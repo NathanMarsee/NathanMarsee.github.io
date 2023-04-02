@@ -1,2 +1,2 @@
 # NathanMarsee.github.io
-My personal website, very early in development!
+My personal website containing my resume and some fun projects I've worked on.
