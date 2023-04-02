@@ -41,7 +41,12 @@ blockquote {
 .two-col-cell {
 	display: table-cell;
 	float: left;
-	width: calc(100% / 2);
+	width: calc((100% / 2) - 8px);
+}
+.one-col-cell {
+	display: table-cell;
+	float: left;
+	width: calc(100%);
 }
 .three-col-cell {
 	display: table-cell;
@@ -223,6 +228,9 @@ ul#menu li a:hover, ul#menu li a.active {
 		width: calc(100% / 1);
 	}
 	.two-col-cell {
+		width: calc(100% / 1);
+	}
+	.one-col-cell {
 		width: calc(100% / 1);
 	}
 	.gallery img {
