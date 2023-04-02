@@ -38,18 +38,54 @@
  <div class="pageitem">
   <h1>Magic Stuff</h1>
   <p>I've been playing Magic for around 13 years at this point. That's already the majority of the time I've been alive, so it should be no surprise I've made some fan content over the years. Imagining new Magic cards was one of my first experiences game design at the age of 11, and now 9 years later I think I've started designing some cards I can be proud of. </p>
-  <p>If anyone is interested at looking at some of the 50+ decks I've built in the last couple of years (theoretically, not physically), you can find them <a href="https://deckstats.net/decks/178463/">here</a>.</p>
+  <p>If anyone is interested at looking at some of the 50+ decks I've built in the last couple of years (theoretically, not physically), you can find them <b><a href="https://deckstats.net/decks/178463/">here</a></b>.</p>
   <p>Lastly, my favorite color combo to play is Gruul, but as far as color wheel philosophy stuff goes, I relate the most with Jeskai.</p>
  </div>
  <div class="pageitem">
-  <h1>Custom Cards (UNDER CONSTRUCTION)</h1>
-  <h2>   Original Concepts</h2>
-  <h3>      Sultai Morph Commander:</h3>
-  <h3>      Other:</h3>
-  <h2>   Universes Beyond</h2>
-  <h3>      Kirby:</h3>
-  <h3>      Metroid:</h3>
-
+  <button type="button" class="collapsible"><h1>Original Card Designs (Click to View)</h1></button>
+  <div class="collContent">
+    <p>Note that all of the following cards were created solely for personal use and are not for sale.</p>
+    <p>I will try to add explanations of my design preocess for the abilities of these cards over time, but for now, enjoy the cards!</p>
+  <h2>Original Concepts</h2>
+  <h3>Sultai Morph Commander:</h3>
+     <div class="three-col-cell gallery">
+    <img src="images/Jalard, Soulmist Summoner.jpg">
+   </div>
+    <div class="three-col-cell gallery">
+     <img src="images/Master of Lost Souls.jpg">
+    </div>
+    <div class="three-col-cell gallery">
+     <img src="images/Mist of War.jpg">
+    </div><br clear="all" />
+  <h3>Other:</h3>
+  <div class="three-col-cell gallery">
+    <img src="images/Asher, Renegade Scholar.jpg">
+   </div><br clear="all" />
+  <h2>Universes Beyond</h2>
+  <h3>Kirby:</h3>
+  <div class="three-col-cell gallery">
+    <img src="images/Kirby, Round Friend.jpg">
+   </div>
+    <div class="three-col-cell gallery">
+     <img src="images/Meta Knight, Star Warrior.jpg">
+    </div>
+    <div class="three-col-cell gallery">
+     <img src="images/King Dedede, Noble Tyrant.jpg">
+    </div>
+    <div class="three-col-cell gallery">
+        <img src="images/Bandana Waddle Dee.jpg">
+       </div><br clear="all" />
+  <h3>Metroid:</h3>
+  <div class="three-col-cell gallery">
+    <img src="images/Samus Aran, Space Warrior.jpg">
+   </div>
+    <div class="three-col-cell gallery">
+     <img src="images/Larval Metroid.jpg">
+    </div>
+    <div class="three-col-cell gallery">
+     <img src="images/The X Parasite.jpg">
+    </div>
+ </div>
  </div>
  
  <!-- // -->
@@ -61,5 +97,22 @@
  <p><a href="http://www.mlpdesign.net">HTML and CSS</a> by MLPdesign.net</p>
 </div>
 <!-- // -->
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("collActive");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
 </body>
 </html>
